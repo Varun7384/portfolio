@@ -1,0 +1,116 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-text {
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.contact-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.contact-link:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+  border-color: var(--text-secondary);
+}
+
+.contact-link svg {
+  flex-shrink: 0;
+  color: var(--text-primary);
+}
+
+.contact-link span {
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 4rem;
+}
+
+.contact-footer {
+  width: 100%;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.contact-footer p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-to-top:hover {
+  color: white;
+}
+
+.back-to-top svg {
+  transition: transform 0.2s ease;
+}
+
+.back-to-top:hover svg {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .contact-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-links {
+    grid-template-columns: repeat(2, minmax(320px, 420px));
+    justify-content: center;
+  }
+}

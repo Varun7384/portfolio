@@ -1,0 +1,13 @@
+export { default as GithubIcon } from "./GithubIcon";
+export { default as LinkedinIcon } from "./LinkedinIcon";
+export { default as MailIcon } from "./MailIcon";
+export { default as PhoneIcon } from "./PhoneIcon";
+export { default as DownloadIcon } from "./DownloadIcon";
+export { default as ArrowUpIcon } from "./ArrowUpIcon";
+export { default as MyWorkIcon } from "./MyWorkIcon";
+export { default as UserIcon } from "./UserIcon";
+export { default as BriefcaseIcon } from "./BriefcaseIcon";
+export { default as CodeIcon } from "./CodeIcon";
+export { default as FolderIcon } from "./FolderIcon";
+export { default as GraduationCapIcon } from "./GraduationCapIcon";
+export { default as AddressBookIcon } from "./AddressBookIcon";
