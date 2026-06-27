@@ -196,8 +196,4 @@ app.get("/api/data", async (_req, res) => {
   res.json(portfolioData);
 });
 
-const PORT = process.env.PORT || 3500;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+export default app;
