@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "backend": "tsx app/server.ts",
+    "backend": "tsx api/server.ts",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },

@@ -1,29 +1,3 @@
-import cors from "cors";
-import dotenv from "dotenv";
-import express from "express";
-
-dotenv.config();
-
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-app.use((req, res, next) => {
-  const start = Date.now();
-
-  console.log(
-    `[REQUEST] ${new Date().toISOString()} | ${req.method} ${req.originalUrl}`,
-  );
-
-  res.on("finish", () => {
-    console.log(
-      `[RESPONSE] ${req.method} ${req.originalUrl} -> ${res.statusCode} (${Date.now() - start}ms)`,
-    );
-  });
-
-  next();
-});
-
 // const project_data = [
 //   {
 //     id: "warehouse-chatbot",
@@ -83,7 +57,7 @@ app.use((req, res, next) => {
 //   },
 // ];
 
-const portfolioData = {
+export const portfolioData = {
   profile: {
     name: "Varun Boddula",
     title: "Software Engineer",
@@ -206,9 +180,3 @@ const portfolioData = {
     },
   ],
 };
-
-app.get("/api/data", async (_req, res) => {
-  res.json(portfolioData);
-});
-
-export default app;
