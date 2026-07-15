@@ -3,7 +3,7 @@ import app from "./app";
 
 const server = express();
 
-server.use("/api", app);
+server.use(app);
 
 const PORT = process.env.PORT || 3700;
 
