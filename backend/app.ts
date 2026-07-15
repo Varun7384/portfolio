@@ -13,4 +13,11 @@ app.use(requestLogger);
 
 app.get("/data", getPortfolioData);
 
+app.get("/test", (_req, res) => {
+  res.json({
+    success: true,
+    message: "Backend is working",
+  });
+});
+
 export default app;
