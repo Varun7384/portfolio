@@ -1,8 +1,8 @@
 import cors from "cors";
 import express from "express";
 
-import { getPortfolioData } from "./controllers/portfolioController";
-import { requestLogger } from "./middleware/requestLogger";
+import { getPortfolioData } from "./controllers/portfolioController.js";
+import { requestLogger } from "./middleware/requestLogger.js";
 
 const app = express();
 
